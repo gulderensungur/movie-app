@@ -1,0 +1,54 @@
+.movie {
+  width: 270px;
+  position: relative;
+  margin: 1rem;
+  background-color: var(--dark-blue);
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.movie img {
+  object-fit: cover;
+  height: 400px;
+}
+
+.movieInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.movieOver {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(102%);
+  max-height: 100%;
+  background-color: #fff;
+  color: var(--very-dark-blue);
+  padding: 1rem;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.movie:hover .movieOver {
+  transform: translateY(0%);
+}
+.tag {
+  background-color: var(--very-dark-blue);
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.tag.green {
+  color: green;
+}
+.tag.orange {
+  color: orange;
+}
+.tag.red {
+  color: red;
+}

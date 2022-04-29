@@ -1,0 +1,43 @@
+:root {
+  --very-dark-blue: #22254b;
+  --dark-blue: #373b69;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  background-color: var(--very-dark-blue);
+  color: white;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+}
+.movie-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--dark-blue);
+  padding: 8px;
+}
+.search {
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: 2px solid var(--very-dark-blue);
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  outline: none;
+}
+
+@media (max-width: 587) {
+  header {
+    justify-content: center;
+  }
+}
